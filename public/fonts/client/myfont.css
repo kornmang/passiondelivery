@@ -1,0 +1,121 @@
+
+@media only screen and (max-width: 1500px) {
+    #mainMenu nav > ul > li > a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #mainMenu nav > ul > li > a {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 1290px) {
+    #mainMenu nav > ul > li > a {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 1235px) {
+    #mainMenu nav > ul > li > a {
+        font-size: 13px !important;
+    }
+}
+
+@media only screen and (max-width: 1198px) {
+    #mainMenu nav > ul > li > a {
+        font-size: 20px !important;
+    }
+}
+@font-face {
+    font-family: 'DB Ozone X';
+    src: url("{{ asset('fonts/client/DB Ozone X Li 3.2.ttf') }}") format('truetype');
+    src: url("{{ asset('fonts/client/DB Ozone X Li It v3.2.ttf') }}") format('truetype');
+    src: url("{{ asset('fonts/client/DB Ozone X Med It v3.2.ttf') }}") format('truetype');
+    src: url("{{ asset('fonts/client/DB Ozone X Med v3.2.ttf') }}") format('truetype');
+    src: url("{{ asset('fonts/client/DB Ozone X UlLi It v3.2.ttf') }}") format('truetype');
+    src: url("{{ asset('fonts/client/DB Ozone X UlLi v3.2.ttf') }}") format('truetype');
+}
+
+@font-face {
+    font-family: 'HussarBold';
+    src: url("{{ asset('fonts/client/HussarBold.otf') }}") format('opentype');
+}
+
+@font-face {
+    font-family: 'IBMPlexSansThai';
+    src: url("{{ asset('fonts/client/IBMPlexSansThai-Regular.ttf') }}") format('truetype');
+    src: url("{{ asset('fonts/client/IBMPlexSansThai-Medium.ttf') }}") format('truetype');
+    src: url("{{ asset('fonts/client/IBMPlexSansThai-Bold.ttf') }}") format('truetype');
+}
+
+body {
+    font-family: 'IBMPlexSansThai' !important;
+
+    font-weight: 400;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* H1 - H6 font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,button,strong,p,a,span  {
+    font-family: 'IBMPlexSansThai' !important;
+}
+
+.main-header .logo {
+    font-family: 'IBMPlexSansThai';
+}
+
+#mainMenu nav > ul > li > a {
+    font-size: 16px;
+    font-family: 'IBMPlexSansThai'!important;
+
+    font-weight: 400 !important;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    #footer{
+        margin-bottom: 0px;
+    }
+    #mainMenu nav > ul > li > a {
+        font-size: 30px;
+    }
+    #footer-fixed-navigation{
+        display: block !important;
+    }
+
+    #scrollTop{
+        bottom: 70px !important;
+        right: 5px !important;
+    }
+}
+
+@media only screen and (max-width: 887px) {
+    #topbar{
+        display: none;
+    }
+}
+
+#footer-fixed-navigation{
+    border-top: 2px #d0d0d0 solid;
+    z-index: 99;
+    padding: 10px;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+}
