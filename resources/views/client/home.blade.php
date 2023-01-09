@@ -228,20 +228,20 @@
                 เครื่องคำนวณช่วยวางแผนการลดน้ำหนัก เพื่อให้เพื่อนๆได้คำนวณค่าพลังงานที่เหมาะสมและเพื่อการวางแผน
                 การลดน้ำหนักที่ได้ผล โดยไม่ต้องเสียเวลาคิดเองอีกต่อไปค่ะ</p>
             <div class="card card-body" style="padding: 50px;">
-                <form id="form1" class="form-validate">
+
                     <div class="row">
                         <label style="font-size: 1.4rem;">เพศ</label>
                         <div class="col-sm-3">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                    value="option1" checked>
+                                <input class="form-check-input" type="radio" name="gender" id="gridRadios1"
+                                    value="Men" checked>
                                 <label class="form-check-label" for="gridRadios1" style="font-size: 1.4rem;">ชาย</label>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                    value="option2">
+                                <input class="form-check-input" type="radio" name="gender" id="gridRadios2"
+                                    value="Women">
                                 <label class="form-check-label" for="gridRadios2" style="font-size: 1.4rem;">หญิง</label>
                             </div>
                         </div>
@@ -249,222 +249,60 @@
                     <div class="row mt-4">
                         <div class="form-group col-md-6">
                             <label style="font-size: 1.4rem;">น้ำหนักตัว (kg.)</label>
-                            <input type="text" class="form-control" name="username" placeholder="น้ำหนักตัว (kg.)"
+                            <input type="text" class="form-control" name="weight" id="weight" placeholder="น้ำหนักตัว (kg.)"
                                 required>
                         </div>
                         <div class="form-group col-md-6">
                             <label style="font-size: 1.4rem;">ส่วนสูง (cm.)</label>
-                            <input type="email" class="form-control" name="email" placeholder="ส่วนสูง (cm.)"
+                            <input type="text" class="form-control" name="height" id="height" placeholder="ส่วนสูง (cm.)"
                                 required>
                         </div>
                     </div>
                     <div class="row mt-3">
                         <div class="form-group col-md-6">
                             <label style="font-size: 1.4rem;">อายุ (ปี)</label>
-                            <input type="email" class="form-control" name="email" placeholder="อายุ (ปี)" required>
+                            <input type="text" class="form-control" name="age" id="age" placeholder="อายุ (ปี)" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label style="font-size: 1.4rem;">ระดับกิจกรรมในเเต่ละวัน</label>
-                            <select class="form-select" name="gender" required>
+                            <select class="form-select" name="activity" id="activity" required>
                                 <option value="">เลือกระดับกิจกรรมในเเต่ละวัน</option>
-                                <option>ทำงานแบบนั่งอยู่กับที่</option>
-                                <option>ออกกำลังกาย หรือเล่นกีฬา แบบเบาๆ 1-3 วันต่อสัปดาห์</option>
-                                <option>ออกกำลังกาย หรือเล่นกัฬา ความหนักปานกลาง 3-5 วันต่อสัปดาห์</option>
-                                <option>ออกกำลังกาย หรือเล่นกีฬา หนัก 6-7 วันต่อสัปดาห์</option>
-                                <option>ออกกำลังกาย หรือเล่นกัฬา หนัก แบบการซ้อมเพื่อการแข่งขัน เป็นประจำทุกวัน</option>
+                                <option value="1.2">ทำงานแบบนั่งอยู่กับที่</option>
+                                <option value="1.375">ออกกำลังกาย หรือเล่นกีฬา แบบเบาๆ 1-3 วันต่อสัปดาห์</option>
+                                <option value="1.55">ออกกำลังกาย หรือเล่นกัฬา ความหนักปานกลาง 3-5 วันต่อสัปดาห์</option>
+                                <option value="1.725">ออกกำลังกาย หรือเล่นกีฬา หนัก 6-7 วันต่อสัปดาห์</option>
+                                <option value="1.9">ออกกำลังกาย หรือเล่นกัฬา หนัก แบบการซ้อมเพื่อการแข่งขัน เป็นประจำทุกวัน</option>
                             </select>
                         </div>
                     </div>
                     <div class="row mt-3">
                         <div class="form-group col-md-6">
                             <label style="font-size: 1.4rem;">เป้าหมายน้ำหนักที่ต้องการ (kg.)</label>
-                            <input type="text" class="form-control" name="username"
+                            <input type="text" class="form-control" name="goal_weight" id="goal_weight"
                                 placeholder="เป้าหมายน้ำหนักที่ต้องการ (kg.)" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label style="font-size: 1.4rem;">จำนวนวัน</label>
-                            <input type="email" class="form-control" name="email" placeholder="จำนวนวัน" required>
+                            <input type="text" class="form-control" name="goal_date" id="goal_date" placeholder="จำนวนวัน" required>
                         </div>
                     </div>
-                    <a class="button-73 mt-4" href="#"
+                    <a class="button-73 mt-4" id="confirm_calculate"
                         style="display:block; margin:auto; border-radius:100px; width:20%;"><span
                             style="font-size:1.6rem;">กดคำนวณ&nbsp;&nbsp;<i class="fa fa-arrow-down"
                                 style="font-size:1.4rem;" aria-hidden="true"></i></span></a>
 
                     <div class="card card-body mt-4" style="background-color: #f5f5f5;">
                         <h3 class="text-center">ปริมาณพลังงานที่ต้องลดต่อวัน (kcal)</h3><br>
-                        <h2 class="text-center" style="font-weight: bold; color:slategrey;">0</h2>
+                        <h2 class="text-center total_less_weight count" id="total_less_weight" style="font-weight: bold; color:slategrey;">0</h2>
                     </div>
-                    <div class="card card-body mt-4" style="background-color: #f5f5f5;">
+                    <div class="card car d-body mt-4" style="background-color: #f5f5f5;">
                         <h3 class="text-center">ปริมาณพลังงานที่แนะนำต่อวัน (kcal)</h3><br>
-                        <h2 class="text-center" style="font-weight: bold; color:slategrey;">0</h2>
+                        <h2 class="text-center tota_day_cal count" id="tota_day_cal" style="font-weight: bold; color:slategrey;">0</h2>
                     </div>
-                </form>
+
             </div>
 
-            {{-- <form>
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-2">
-                        <label class="text-left" style="font-size: 1.4rem;">เลือกเพศ:</label>
-                    </div>
-                    <div class="col-3">
-                        <div class="form-check">
-                            <input class="form-check-input" style="background-color:#DBDBDB; border-color:#DBDBDB;"
-                                name="exampleRadios" id="exampleRadios1" value="option1" checked="" type="radio">
-                            <label class="" style="text-align:left; font-size: 1.4rem;">
-                                เพศหญิง
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="form-check">
-                            <input class="form-check-input" style="background-color:#DBDBDB; border-color:#DBDBDB;"
-                                name="exampleRadios" id="exampleRadios2" value="option2" type="radio">
-                            <label class="" style="text-align:left; font-size: 1.4rem;">
-                                เพศชาย
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-3"></div>
-                </div>
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-2">
-                        <label class="text-left" style="font-size: 1.4rem;"></label>
-                    </div>
-                    <div class="col-3">
-                        <div class="row">
-                            <div class="col-6">
-                                <label class="" style="text-align:right; font-size: 1.4rem;">&nbsp;ส่วนสูง
-                                    (ซม.)&nbsp;</label>
-                            </div>
-                            <div class="col-6">
-                                <input style="width: 100% !important; background-color:#DBDBDB;" type="email"
-                                    class="form-control" id="inputEmail4">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="row">
-                            <div class="col-6">
-                                <label class="" style="text-align:right; font-size: 1.4rem;">&nbsp;ส่วนสูง
-                                    (ซม.)&nbsp;</label>
-                            </div>
-                            <div class="col-6">
-                                <input style="width: 100% !important; background-color:#DBDBDB;" type="email"
-                                    class="form-control" id="inputEmail4">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3"></div>
-                </div>
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-2">
-                        <label class="text-left" style="font-size: 1.4rem;"></label>
-                    </div>
-                    <div class="col-3">
-                        <div class="row">
-                            <div class="col-6">
-                                <label class="" style="text-align:right; font-size: 1.4rem;">&nbsp;น้ำหนัก
-                                    (กก.)&nbsp;</label>
-                            </div>
-                            <div class="col-6">
-                                <input style="width: 100% !important; background-color:#DBDBDB;" type="email"
-                                    class="form-control" id="inputEmail4">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3"></div>
-                    <div class="col-3"></div>
-                </div>
-            </form> --}}
 
-            {{-- <form class="">
-                <div class="row mt-4">
-                    <div class="col-1" style="padding: 0;"></div>
-                    <div class="col-2" style="padding: 0;">
-                        <label class="text-left" style="font-size: 1.2rem;">เลือกเพศ:</label>
-                    </div>
-                    <div class="col-1" style="padding: 0;">
-                        <div class="form-check">
-                            <input class="form-check-input" style="background-color:#DBDBDB; border-color:#DBDBDB;"
-                                name="exampleRadios" id="exampleRadios1" value="option1" checked="" type="radio">
-                            <label class="" style="text-align:left; font-size: 1.2rem;">
-                                เพศหญิง
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-1" style="padding: 0;">
-                        <div class="form-check">
-                            <input class="form-check-input" style="background-color:#DBDBDB; border-color:#DBDBDB;"
-                                name="exampleRadios" id="exampleRadios2" value="option2" type="radio">
-                            <label class="" style="text-align:left; font-size: 1.2rem;">
-                                เพศชาย
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-1" style="padding: 0;">
-                        <label class="" style="text-align:right; font-size: 1.2rem;">อายุ (ปี)&nbsp;&nbsp;</label>
-                    </div>
-                    <div class="col-1" style="padding: 0;">
-                        <input style="width: 100% !important; background-color:#DBDBDB;" type="email"
-                            class="form-control" id="inputEmail4">
-                    </div>
-                    <div class="col-1" style="padding: 0;">
-                        <label class="" style="text-align:right; font-size: 1.2rem;">&nbsp;ส่วนสูง
-                            (ซม.)&nbsp;</label>
-                    </div>
-                    <div class="col-1" style="padding: 0;">
-                        <input style="width: 100% !important; background-color:#DBDBDB;" type="email"
-                            class="form-control" id="inputEmail4">
-                    </div>
-                    <div class="col-1" style="padding: 0;">
-                        <label class="" style="text-align:right; font-size: 1.2rem;">&nbsp;น้ำหนัก
-                            (กก.)&nbsp;</label>
-                    </div>
-                    <div class="col-1" style="padding: 0;">
-                        <input style="width: 100% !important; background-color:#DBDBDB;" type="email"
-                            class="form-control" id="inputEmail4">
-                    </div>
-                    <div class="col-1" style="padding: 0;"></div>
-                    <div class="col-1" style="padding: 0;"></div>
-                    <div class="col-2" style="padding: 0;">
-                        <label style="text-align:left; font-size: 1.2rem; ">ระดับกิจกรรมในเเต่ละวัน
-                            :</label>
-                    </div>
-                    <div class="col-3"><select class="form-select" id="exampleFormControlSelect1"
-                            style="background-color:#DBDBDB;">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="col-6"></div>
-                    <div class="col-1" style="padding: 0;"></div>
-                    <div class="col-3" style="padding: 0;">
-                        <label style="text-align:left; font-size: 1.2rem; ">เป้าหมายน้ำหนักที่ต้องการ (kg.)</label>
-                    </div>
-                    <div class="col-2" style="padding: 0;">
-                        <input style="width: 100% !important; background-color:#DBDBDB;" type="email"
-                            class="form-control" id="inputEmail4">
-                    </div>
-                    <div class="col-1" style="padding: 0;">
-                        <label style="text-align:center; font-size: 1.2rem; ">จำนวนวัน</label>
-                    </div>
-                    <div class="col-2" style="padding: 0;">
-                        <input style="width: 100% !important; background-color:#DBDBDB;" type="email"
-                            class="form-control" id="inputEmail4">
-                    </div>
-                </div>
-                <a class="button-73 mt-4" href="#"
-                    style="display:block; margin:auto; border-radius:100px; width:20%;"><span
-                        style="font-size:1.6rem;">กดคำนวณ&nbsp;&nbsp;<i class="fa fa-arrow-right"
-                            style="font-size:1.6rem;" aria-hidden="true"></i></span></a>
-            </form> --}}
         </div>
     </section>
     <section class="d-block d-lg-none"
@@ -550,4 +388,63 @@
     </section>
     <img class="bgimg1" onContextMenu="return false;" src="{{ asset('images/passionfood/img/img9.png') }}"
         width="100%">
+@push('js')
+    <script>
+        $(document).ready(function () {
+            $('#confirm_calculate').on('click',function () {
+                let gender = $('input[name="gender"]:checked').val()
+                let weight = $('#weight').val()
+                let height = $('#height').val()
+                let age = $('#age').val()
+                let activity = $('#activity').val()
+                let goal_weight = $('#goal_weight').val()
+                let goal_date = $('#goal_date').val()
+                let bmr = 0;
+                let tdee = 0;
+                let totalday = 0;
+                let totallesscal = 0;
+                if (gender == 'Men') {
+                    bmr = (66 +(13.7 * parseFloat(weight)) + (5 * parseFloat(height)) - (6.8 * parseInt(age))).toFixed(2);
+                    tdee = (bmr * activity).toFixed(2);
+                    totalday = parseInt(((weight - goal_weight) * 7700)/goal_date);
+                    totallesscal = parseInt(tdee - totalday);
+                    console.log('bmr',bmr,'tdee',tdee,'totalday',totalday,'totallesscal',totallesscal)
+                    $('#total_less_weight').text(totalday);
+                    $('#tota_day_cal').text(totallesscal);
+                    $('.count').each(function() {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 1000,
+                    easing: 'swing',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+
+                } else {
+                    bmr = (665 +(9.6 * parseFloat(weight)) + (1.8 * parseFloat(height)) - (4.7 * parseInt(age))).toFixed(2);
+                    tdee = (bmr * activity).toFixed(2);
+                    totalday = parseInt(((weight - goal_weight) * 7700)/goal_date);
+                    totallesscal = parseInt(tdee - totalday);
+                    $('#total_less_weight').text(totalday);
+                    $('#tota_day_cal').text(totallesscal);
+                    $('.count').each(function() {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 1000,
+                    easing: 'swing',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+                }
+
+             })
+        });
+    </script>
+@endpush
 @endsection
