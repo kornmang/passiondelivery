@@ -11,11 +11,11 @@
                     <div class="container-fluid" style="padding:0; position:absolute; margin:-40% 2% 20% 2%;">
                         <div class="row" style="">
                             <div class="col-12">
-                                {{-- <h1 class="banner" data-animate="fadeInUp">
+                                <h1 class="banner" data-animate="fadeInUp">
                                     I’M NOT DIETING<br>
                                     I’M CHANGING</h1>
                                 <h1 class="banner2 mt-3" data-animate="fadeInUp">
-                                    LIFESTYLE</h1> --}}
+                                    LIFESTYLE</h1>
                             </div>
                         </div>
                     </div>
