@@ -11,11 +11,11 @@
                     <div class="container-fluid" style="padding:0; position:absolute; margin:-40% 2% 20% 2%;">
                         <div class="row" style="">
                             <div class="col-12">
-                                <h1 class="banner" data-animate="fadeInUp">
+                                {{-- <h1 class="banner" data-animate="fadeInUp">
                                     I’M NOT DIETING<br>
                                     I’M CHANGING</h1>
                                 <h1 class="banner2 mt-3" data-animate="fadeInUp">
-                                    LIFESTYLE</h1>
+                                    LIFESTYLE</h1> --}}
                             </div>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                 <div class="col-xs-12">
                     <h1 class="text-center mt-5" data-animate="fadeInUp"
                         style="font-size:2.4rem; color:#42623D; margin-bottom:0px;">เกี่ยวกับเรา</h1>
-                    <p class="aboutusfont" data-animate="fadeInUp">อาหารคลีนที่มีคอนเซ็ป “สุขภาพดีเเบบยั่งยืน”<br>
+                    <p class="aboutusfont" style="text-align: center !important;" data-animate="fadeInUp">อาหารคลีนที่มีคอนเซ็ป “สุขภาพดีเเบบยั่งยืน”<br>
                         เเละ “I’m not dieting but i’m changing life style”
                         ธุรกิจนี้เกิดจากความรักในสุขภาพเเละการทำอาหารเป็นทุนเดิม
                         ซอสเรียนจบเทคนิคการเเพทย์เเละได้ทำงานในสายสุขภาพในโรงพยาบาล
