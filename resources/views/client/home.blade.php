@@ -77,6 +77,7 @@
                 <div class="col-xs-12">
                     <h1 class="text-center mt-5" data-animate="fadeInUp"
                         style="font-size:2.4rem; color:#42623D; margin-bottom:0px;">เกี่ยวกับเรา</h1>
+<<<<<<< HEAD
                     <p class="aboutusfont" style="text-align: center !important;" data-animate="fadeInUp">อาหารคลีนที่มีคอนเซ็ป “สุขภาพดีเเบบยั่งยืน”<br>
                         เเละ “I’m not dieting but i’m changing life style”
                         ธุรกิจนี้เกิดจากความรักในสุขภาพเเละการทำอาหารเป็นทุนเดิม
@@ -84,6 +85,15 @@
                         ชั้นนำของกรุงเทพ เเละ ได้คลุกคลีวงการอาหารในโรงเเรมระดับ 5 ดาว
                         มามากกว่า 5 ปี จึงได้นำความรู้เเละ passion ในการรักการทำอาหาร
                         มาสร้างเป็นธุรกิจอาหารคลีนเดลิเวอรี่</p>
+=======
+                        <p class="aboutusfont" data-animate="fadeInUp" style="text-align: center;">อาหารคลีนที่มีคอนเซ็ป “สุขภาพดีเเบบยั่งยืน”<br>
+                            เเละ “I’m not dieting but i’m changing life style”
+                            ธุรกิจนี้เกิดจากความรักในสุขภาพเเละการทำอาหารเป็นทุนเดิม
+                            ซอสเรียนจบเทคนิคการเเพทย์เเละได้ทำงานในสายสุขภาพในโรงพยาบาล
+                            ชั้นนำของกรุงเทพ เเละ ได้คลุกคลีวงการอาหารในโรงเเรมระดับ 5 ดาว
+                            มามากกว่า 5 ปี จึงได้นำความรู้เเละ passion ในการรักการทำอาหาร
+                            มาสร้างเป็นธุรกิจอาหารคลีนเดลิเวอรี่</p>
+>>>>>>> c79caf5770f85b1e1b8be35be095ba48d2e3ad9a
                     <a class="button-73 mt-4" data-animate="fadeInUp" href="{{ route('aboutus') }}"
                         style="display:block; margin:auto; border-radius:100px; width:45%;"><span
                             style="font-size:1.2rem;">เพิ่มเติม&nbsp;&nbsp;<i class="fa fa-arrow-right"
