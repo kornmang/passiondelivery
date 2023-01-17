@@ -1812,8 +1812,9 @@ a.btn:not([href]):not([tabindex]):not(:disabled):not(.disabled).active {
     border-color: transparent !important;
 }
 
-.post-item.border>.post-item-wrap>.post-item-description {
-    padding: 10px !important;
+.post-item.border > .post-item-wrap > .post-item-description {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
 }
 
 .tabs .nav-tabs .nav-link.active {

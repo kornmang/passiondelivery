@@ -24,5 +24,6 @@ Route::get('/aboutus', [App\Http\Controllers\Client\HomeController::class, 'abou
 Route::get('/menu', [App\Http\Controllers\Client\HomeController::class, 'menu'])->name('menu');
 Route::get('/menusignature', [App\Http\Controllers\Client\HomeController::class, 'menusignature'])->name('menusignature');
 Route::get('/menudetail', [App\Http\Controllers\Client\HomeController::class, 'menudetail'])->name('menudetail');
+Route::get('/blogall', [App\Http\Controllers\Client\HomeController::class, 'blogall'])->name('blogall');
 Route::get('/blog', [App\Http\Controllers\Client\HomeController::class, 'blog'])->name('blog');
 Route::get('/contact', [App\Http\Controllers\Client\HomeController::class, 'contact'])->name('contact');

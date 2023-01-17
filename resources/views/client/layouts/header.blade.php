@@ -66,7 +66,7 @@
                                     <a style=" font-size:1.4rem;" href="{{ route('menu') }}">เมนู</a>
                                 </li>
                                 <li>
-                                    <a style=" font-size:1.4rem;" href="{{ route('blog') }}">Blog</a>
+                                    <a style=" font-size:1.4rem;" href="{{ route('blogall') }}">Blog</a>
                                 </li>
                                 <li>
                                     <a style=" font-size:1.4rem;"

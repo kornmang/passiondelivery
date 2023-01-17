@@ -24,20 +24,22 @@ class HomeController extends Controller
 
     public function menu()
     {
-
         return view('client.passionfood.menu');
     }
 
     public function menusignature()
     {
-
         return view('client.passionfood.menusignature');
     }
 
     public function menudetail()
     {
-
         return view('client.passionfood.menudetail');
+    }
+
+    public function blogall()
+    {
+        return view('client.passionfood.blogall');
     }
 
     public function blog()
@@ -48,7 +50,6 @@ class HomeController extends Controller
 
     public function contact()
     {
-
         return view('client.passionfood.contact');
     }
 
