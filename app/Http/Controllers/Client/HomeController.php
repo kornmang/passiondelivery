@@ -4,17 +4,32 @@ namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
-use App\Models\Banners;
-use App\Models\ProductCategory;
-use App\Models\Product;
+use App\Http\Controllers\Helper\HelperController;
+use Illuminate\Support\Facades\Http;
 
 class HomeController extends Controller
 {
     public function index()
     {
+        $banners = (new HelperController)->responseApiData('banners');
 
-        return view('client.home');
+        // $res = Http::get('https://backend.meeting.co.th/api/banners/WB20230101');
+        // $banners = json_decode($res->body());
+
+		// $str_len = strlen($banners);
+
+		// $substring = substr($banners,0,20);
+        // $substring2 = substr($banners,20,$str_len);
+
+        // $array_substring = str_split($substring);
+
+		// for($z=18; $z >= 0; $z-=2){
+        //     unset($array_substring[$z]);
+        // }
+
+        // $banners = json_decode(base64_decode(implode($array_substring) . $substring2));
+
+        return view('client.home',compact('banners'));
     }
 
     public function aboutus()
@@ -52,20 +67,4 @@ class HomeController extends Controller
     {
         return view('client.passionfood.contact');
     }
-
-
-
-
-    // public function product()
-    // {
-    //     $categories = ProductCategory::where('publish',1)->orderBy('sort','asc')->get();
-    //     return view('client.boorawee.product',compact('categories'));
-    // }
-
-    // public function minerals()
-    // {
-    //     $categories = ProductCategory::where('publish',1)->orderBy('sort','asc')->get();
-    //     return view('client.boorawee.minerals',compact('categories'));
-    // }
-
 }

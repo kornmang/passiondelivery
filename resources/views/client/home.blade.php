@@ -47,6 +47,57 @@
         </div>
     </section>
 
+    {{-- ฺBanner Api --}}
+    {{-- <section id="home" style="padding:0;">
+        <div id="home" class="carousel d-none d-sm-block" data-items="1" data-animate="5" data-arrows="false"
+            data-dots="false">
+			@foreach($banners as $banner)
+			<div class="portfolio-item-wrap">
+                <div class="portfolio-image">
+                    <img alt="image" style="margin-top: -10px; pointer-events: auto;" onContextMenu="return false;"
+                        width="100%" src="{{ $banner->img_website }}">
+                    <div class="container-fluid" style="padding:0; position:absolute; margin:-40% 2% 20% 2%;">
+                        <div class="row" style="">
+                            <div class="col-12">
+                                <h1 class="banner" data-animate="fadeInUp">
+                                    I’M NOT DIETING<br>
+                                    I’M CHANGING</h1>
+                                <h1 class="banner2 mt-3" data-animate="fadeInUp">
+                                    LIFESTYLE</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			@endforeach
+
+        </div>
+        <div id="home" class="carousel d-block d-sm-none" data-items="1" data-animate="5" data-arrows="false"
+            data-dots="false">
+			@foreach($banners as $banner)
+			<div class="portfolio-item-wrap">
+                <div class="portfolio-image">
+                    <img alt="image" style="margin-top: -10px; pointer-events: auto;" onContextMenu="return false;"
+                        width="100%" src="{{ $banner->img_mobile }}">
+                        <div class="container-fluid" style="padding:0; position:absolute; margin:-60% 2% 20% 2%;">
+                            <div class="row" style="">
+                                <div class="col-12">
+                                    <h1 style="text-align:center; color:#fff; font-size:2.5rem; font-family:'HussarBold' !important; margin-bottom:0px !important;" data-animate="fadeInUp" >
+                                        I’M NOT DIETING<br>
+                                        I’M CHANGING</h1>
+                                    <h1 class="mt-1"
+                                        style="text-align:center; color:#fff; font-size:2.0rem; font-family:'Rondal-Regular' !important; margin-bottom:0px !important;" data-animate="fadeInUp">
+                                        LIFESTYLE</h1>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+			@endforeach
+
+        </div>
+    </section> --}}
+
     {{-- AboutUs --}}
     <section class="d-none d-lg-block d-xl-block" style="padding:10;">
         <div class="container">
